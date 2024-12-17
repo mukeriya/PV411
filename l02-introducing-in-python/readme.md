@@ -99,3 +99,32 @@ print(10 % 15)
 - ```Ctrl + X``` - Cut
 - ```Shift + F10``` - Run code
 - ```Ctrl + Shift + Arrows(Up/Down)``` - Move line
+
+## Block string
+
+```python
+print('''
+Hello
+world
+''')
+```
+
+## Priority of operators
+1. ```+```, ```-``` Unary
+2. ```**```
+3. ```*```, ```/```, ```%```
+4. ```+```, ```-``` Binary
+
+
+```python
+print(0o123)  #
+print(0xff)  #
+print(0.2)  #
+print(.2)  #
+print(2.5)  #
+print(-0.4)  #
+print(0.00000000000000000001)  #
+print(1e15)  #
+print(1000000000000000)  #
+print(1_000_000_000_000_000)  #
+```
