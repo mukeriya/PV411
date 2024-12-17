@@ -1,4 +1,4 @@
-# Variables and ```print```
+# Data types and ```print```
 
 Display some text in console
 
