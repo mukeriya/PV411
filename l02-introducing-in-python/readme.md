@@ -65,7 +65,8 @@ print(2 + 2)  # integer (int)
 - ```**```
 - ```//```
 - ```%```
-  Operators can be Unary, Binary or Ternary (Depends on amount of operands)
+
+Operators can be Unary, Binary or Ternary (Depends on amount of operands)
 
 ```Operand``` - is a value that used with operator
 
@@ -110,11 +111,11 @@ world
 ```
 
 ## Priority of operators
+
 1. ```+```, ```-``` Unary
 2. ```**```
 3. ```*```, ```/```, ```%```
 4. ```+```, ```-``` Binary
-
 
 ```python
 print(0o123)  #
