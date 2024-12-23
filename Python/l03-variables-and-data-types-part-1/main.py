@@ -1,64 +1,22 @@
-# pi = 3.14
-#
-# r = 16541
-#
-# print(pi * r ** 2)
+# Завдання:
+# Напиши програму, яка обчислює вартість покупки з урахуванням знижки.
 
-# name = input('Enter your name: ')
-#
-# print('Welcome', name)
+# Користувач вводить початкову вартість товару (у гривнях).
+price = float(input("Enter price: "))
 
-# x = input('Enter x: ')
-# y = input('Enter y: ')
+# Користувач вводить відсоток знижки (наприклад, 10 для 10%).
 
-# print(x + y)  # Concat
-# print(type(x))
-# print(type(y))
+percents = float(input('Enter discount: '))
 
+# Програма повинна обчислити:
+# Розмір знижки в гривнях.
 
-# x = '5'
+discount = (price / 100) * percents
 
-# x = int(x)
+# Кінцеву вартість товару після знижки.
 
-# print(x)
-# print(type(x))
-# print(int('564'))
-# # print(int('a'))
-# print(int(2.9))
-#
-# print(str(5) + str(4))
-# print(float('5'))
-# print(float('5.4'))
-# print(float(5))
-# print(float(5.4))
-#
-# print(True)
-# print(False)
-# print(bool(5))
-# print(bool(0))
-# print(bool(0.1))
-# print(bool(-5))
-# print(bool("Sasha"))
-# print(bool(""))
-# print(bool(" "))
-#
-# print(int(True))
-# print(int(False))
+final_price = price - discount
 
-
-# x = int(input('Enter x: '))
-# y = int(input('Enter y: '))
-#
-# print(x + y)
-# print(type(x))
-# print(type(y))
-
-pi = 3.14
-
-r = float(input('Enter radius: '))
-
-print(pi * r ** 2)
-
-# snake_case
-# x, y
-
+# Виведи результати у зрозумілому вигляді.
+print('Discount:', discount, 'грн')
+print('Final price:', final_price, 'грн')
