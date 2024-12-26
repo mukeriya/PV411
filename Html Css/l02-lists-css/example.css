@@ -1,0 +1,27 @@
+ol {
+  background-color: #ef9eaf;
+  color: white;
+}
+
+ol li {
+  list-style-position: inside;
+  background-color: #c66375;
+}
+
+ol li span {
+  background-color: #9d3649;
+}
+
+ul li {
+  list-style-image: url("/img/unchecked_16.png");
+}
+
+ul li::after {
+  content: url("/img/close.png");
+}
+
+ul li.checked {
+  list-style-image: url("/img/checked_16.png");
+  background-color: gray;
+  text-decoration: line-through;
+}

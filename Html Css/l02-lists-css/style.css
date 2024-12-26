@@ -1,0 +1,126 @@
+/* Defaul styles */
+
+/* p {
+  color: red;
+  font-size: 40px;
+} */
+
+/* Card styles */
+
+/* p.card {
+  color: magenta;
+}
+
+#main {
+  color: red;
+} */
+
+/* #main {
+  color: blue;
+} */
+
+/* id > class > tag */
+/* 
+.example * {
+  color: red;
+}
+
+.example .card {
+  background-color: blueviolet;
+  color: white;
+}
+
+.example > .card {
+  background-color: chartreuse;
+  color: white;
+}
+
+.example div {
+  color: cyan;
+}
+
+p + div {
+  color: red;
+} */
+
+/* p ~ div {
+  background-color: aqua;
+} */
+
+/* ol {
+  list-style-type: upper-roman;
+}
+
+ul {
+  list-style-type: square;
+} */
+
+ul ul {
+  /*   list-style-type: none;
+  list-style-position: inside;
+  list-style-image: url("/img/icon.png"); */
+}
+/* 
+button {
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+}
+
+button:hover {
+  color: red;
+  background-color: white;
+  cursor: pointer;
+} */
+
+section:first-child {
+  color: red;
+}
+
+section:first-of-type:hover {
+  color: cyan;
+}
+
+div:not(:hover) {
+  background-color: aquamarine;
+}
+
+/* ul li:nth-child(2) {
+  background-color: red;
+} */
+
+/* ul li:nth-child(even) {
+  background-color: red;
+}
+ */
+/* ul li:nth-last-child(3n + 3) {
+  background-color: red;
+} */
+
+ul li:nth-of-type(3n + 3) {
+  background-color: red;
+}
+
+div p:only-child {
+  color: magenta;
+}
+
+.checkable::after {
+  content: url("/img/close.png");
+}
+
+.checkable::before {
+  content: "";
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.checkable {
+  border: 1px solid red;
+  padding: 20px;
+  margin: 50px;
+}
