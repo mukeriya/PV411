@@ -1,37 +1,66 @@
-# text = input('Enter: ')
+# print(10 > 5)  # True
+# print(10 < 5)  # False
+# print(10 > 10)  # False
+# print(10 >= 10)  # True
+# print(10 <= 10)  # True
+# print(10 == 10)  # True
+# print(10 == 15)  # False
+# print(10 != 15)  # True
+
+
+# user_age = int(input('Enter your age: '))
 #
-# print(text[0])
-# print('Hello'[1])
+# print(user_age >= 18)
+
+A = True
+B = True
+
+print(A and B)
+print(A or B)
+
+A = True
+B = False
+
+print(A and B)
+print(A or B)
+
+A = False
+B = True
+
+print(A and B)
+print(A or B)
+
+A = False
+B = False
+
+print(A and B)
+print(A or B)
+
+A = True
+
+print(not A)
+
+A = False
+
+print(not A)
+
+time = 7
+has_ticket = False
+has_money = True
+has_luggage = False
+
+print(has_money or has_ticket and not has_luggage and time < 18)
+print((has_money or has_ticket) and not has_luggage and time < 18)
+
+# not
+# and
+# or
+
+# number = int(input('Enter a number: '))
 #
+# print(number % 2 == 0)
 
 
-# number = input('Enter: ')
-#
-# tens = int(number[0])
-# digit = int(number[1])
-#
-# print(tens)
-# print(digit)
-#
-# print(tens + digit)
+age = int(input('Enter your age: '))
 
-# text = input('Enter: ')
-#
-# print(text[len(text) - 1])
-# print(text[-1])
-
-# print(10 % 3)  # 10 - 9 = 1
-# print(15 % 3)  # 0
-# print(45 % 20)  # 5
-
-number = int(input('Enter: '))
-
-hundreds = number // 100 % 10  # 674 // 100 = 6
-tens = number // 10 % 10  # 674 // 10 = 67
-digit = number % 10  # 674 % 10 = 4
-
-print(hundreds)
-print(tens)
-print(digit)
-
-print(hundreds + tens + digit)
+print(18 <= age < 55)  # age >= 18 and age < 55
