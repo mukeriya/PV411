@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.bold-text {
+  font-weight: 500;
+}
+
+.remark-text {
+  font-style: italic;
+}
+
+.contents {
+  background-color: rgb(236, 236, 236);
+  display: inline-block;
+  padding: 1.4em;
+  border: 1px solid gray;
+}
+
+.contents h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  max-width: 1150px; /*better use 1200 or 1400 but in this case for pizel perfect used 1150*/
+  margin: 0 auto;
+}
