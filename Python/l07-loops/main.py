@@ -236,3 +236,17 @@ for _ in range(3):
     number *= number
 
 print(number)
+
+start = int(input("первое число:: "))
+end = int(input("второе число: "))
+if start > end:
+    start, end = end, start
+
+total_sum = 0
+count = 0
+for number in range(start, end + 1):
+    total_sum += number
+    count += 1
+average = total_sum / count if count != 0 else 0
+print(f"Сума чисел у діапазоні: {total_sum}")
+print(f"Середнє арифметичне: {average}")
