@@ -164,8 +164,8 @@ if upper_bound < lower_bound:
     lower_bound = upper_bound
     upper_bound = temp
 
-print(lower_bound) # 13
-print(upper_bound) # 33
+print(lower_bound)  # 13
+print(upper_bound)  # 33
 ```
 
 ```python
@@ -177,8 +177,8 @@ if upper_bound < lower_bound:
     lower_bound = upper_bound - lower_bound
     upper_bound = upper_bound - lower_bound
 
-print(lower_bound) # 13
-print(upper_bound) # 33
+print(lower_bound)  # 13
+print(upper_bound)  # 33
 ```
 
 ```python
@@ -188,6 +188,136 @@ upper_bound = 13
 if upper_bound < lower_bound:
     lower_bound, upper_bound = upper_bound, lower_bound
 
-print(lower_bound) # 13
-print(upper_bound) # 33
+print(lower_bound)  # 13
+print(upper_bound)  # 33
+```
+
+## ```for```
+
+```for``` loops, unlike ```while``` loops, iterate not based on a condition but for eah element in a list, set, tuple or
+other collection of elements. In other words, for each iteration of the loop, one of the elements in collection is used.
+For example, to check expiration date of food products in a store, person needs to sequentially take eah item from their
+basket and ensure that the expiration date has not passed. Here, the basket of products serves as collection of
+elements. The products are elements, and checking the expiration date of one product is an iteration of the loop.
+
+Example:
+
+```python
+for i in range(1, 10):  # Last element not included!
+    print(i)
+```
+Result:
+```commandline
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+### Variants of using ```range``` function
+
+- ```range(end)``` - sequence from 0 to ```end```
+- ```range(start, end)``` - sequence from ```start``` to ```end```
+- ```range(start, end, step)``` - sequence from ```start``` to ```end``` with step - ```step```
+
+Examples:
+
+```python
+upper_bound = 5
+
+for i in range(upper_bound + 1):  # adds 1 to include last element
+    print(i)
+```
+```commandline
+0
+1
+2
+3
+4
+5
+```
+
+---
+```python
+lower_bound = 1
+upper_bound = 5
+
+for i in range(lower_bound, upper_bound + 1):
+    print(i)
+```
+```commandline
+1
+2
+3
+4
+5
+```
+---
+```python
+lower_bound = 1
+upper_bound = 5
+
+for i in range(lower_bound, upper_bound + 1, 2):
+    print(i)
+```
+```commandline
+1
+3
+5
+```
+---
+Reverse order:
+```python
+lower_bound = 1
+upper_bound = 5
+
+for i in range(upper_bound, lower_bound - 1, -1):
+    print(i)
+```
+```commandline
+5
+4
+3
+2
+1
+```
+
+
+## ```continue```, ```break```
+
+```continue``` - skips the rest of the current iteration and moves to the next iteration of the loop. Ofter used to skip unwanted elements in a sequence or to avoid executing some part of the code under certain conditions.
+Example:
+```python
+for i in range(5):
+    if i == 2:
+        continue # Skip this iteration when i is 2
+    print(i)
+
+# Output: 0, 1, 2, 3, 4
+```
+```break``` - immediately exits the loop. regardless of the loop condition. Commonly used to terminate a loop early when a specific condition is met
+Example:
+```python
+for i in range(5):
+    if i == 3:
+        break # Exit the loop when num is 3
+    print(i)
+# Output: 0, 1, 2
+```
+
+### Using  ```continue``` and ```break``` together
+
+```python
+for i in range(10):
+    if i % 2 == 0:
+        continue  # Skip even numbers
+    if i > 5:
+        break  # Stop the loop if i is grater than 5
+    print(i)
+# Output: 1, 3, 5
 ```
