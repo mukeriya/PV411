@@ -83,8 +83,8 @@
 #     i += 1
 
 
-lower_bound = 33
-upper_bound = 13
+# lower_bound = 33
+# upper_bound = 13
 
 # if upper_bound < lower_bound:
 #     temp = lower_bound
@@ -101,5 +101,138 @@ upper_bound = 13
 # if upper_bound < lower_bound:
 #     lower_bound, upper_bound = upper_bound, lower_bound
 
-print(lower_bound)
-print(upper_bound)
+# print(lower_bound)
+# print(upper_bound)
+
+
+# i = 1
+#
+# while i < 10:
+#     print(i)
+#     i += 1
+#     break
+#
+# print('End')
+
+
+# while True:
+#
+#     print('1. Sum')
+#     print('2. Diff')
+#     print('9. Exit')
+#
+#     choice = int(input('Select: '))
+#
+#     if choice == 9:
+#         print('Goodbye')
+#         break
+#
+#     if choice == 1:
+#         ...
+#     elif choice == 2:
+#         ...
+
+# i = 1
+#
+# while True:
+#
+#     if i > 3:
+#         break
+#
+#     print(i)
+#     i += 1
+
+
+# i = 0
+#
+# while i < 10:
+#
+#     if i % 2 == 0:
+#         i += 1
+#         continue
+#
+#     print(i)
+#     i += 1
+
+# i = 1
+#
+# while i < 5:
+#     print(i)
+#     if i == 4:
+#         break
+#     i += 1
+# else:
+#     print('End')
+
+
+# i = 1
+#
+# while i < 10:
+#     i += 1
+#     if i % 2 != 0:
+#         continue
+#
+#     if i == 5:
+#         break
+#
+#     print(i)
+
+
+# lower_bound = int(input("Введите первое число: "))
+# upper_bound = int(input("Введите второе число: "))
+#
+# i = lower_bound
+# while i <= upper_bound:
+#     if i % 2 != 0:
+#         print(i)
+#     i += 1
+
+lower_bound = 1
+upper_bound = 10
+
+print('=' * 50)
+
+for i in range(upper_bound + 1):  # from 0
+    print(i)
+
+print('=' * 50)
+
+for i in range(lower_bound, upper_bound + 1):
+    print(i)
+
+print('=' * 50)
+
+for i in range(lower_bound, upper_bound + 1, 2):
+    print(i)
+
+print('=' * 50)
+
+for i in range(upper_bound, lower_bound - 1, -1):
+    print(i)
+
+print('=' * 50)
+
+for row in range(1, 11):
+    for col in range(1, 11):
+        print(row * col, end='\t')
+    print()
+
+for i in range(1, 10):
+    if i % 2 != 0:
+        continue
+
+    print(i)
+
+for i in range(1, 10):
+    if i == 8:
+        break
+
+    print(i)
+
+KM_TO_MILES_COEF = 0.000621371
+
+number = 2
+for _ in range(3):
+    number *= number
+
+print(number)
