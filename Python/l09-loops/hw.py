@@ -101,15 +101,99 @@ import time
 # 3. Для кожного числа, яке знаходиться в діапазоні від 1 до n потрібно зробити наступне
 #   3.1. Перевірити чи число кратне 3 або 5. Якщо це істина додати в суму. +
 
-end = int(input('Enter n: '))
-
-total_sum = 0
-
-for i in range(end):
-    if i % 3 == 0 or i % 5 == 0:
-        total_sum += i
-
-print(total_sum)
+# end = int(input('Enter n: '))
+#
+# total_sum = 0
+#
+# for i in range(end):
+#     if i % 3 == 0 or i % 5 == 0:
+#         total_sum += i
+#
+# print(total_sum)
 
 # 3 6 9 - 18
 # 5 - 23
+
+
+greetings = 'Hello world!'
+
+# for letter in greetings:
+#     print(letter)
+#
+# print('=' * 50)
+#
+# for i in range(len(greetings)):
+#     print(i, greetings[i])
+
+
+# for char in range(len(greetings)):
+#     if char % 2 == 0:
+#         print(greetings[char], end='')
+#
+# print()
+#
+# result_greetings = ''
+#
+# for char in greetings:
+#     if char != 'l':
+#         result_greetings += char
+#
+# print(result_greetings)
+#
+# for index, value in enumerate(greetings):
+#     if value == 'o' or value == 'e':
+#         print(index, end=' ')
+
+
+# print('e' in greetings)
+# print('Q' in greetings)
+# print('Hello' in greetings)
+#
+# for index, value in enumerate(greetings):
+#     if value == ' ':
+#         continue
+#
+#     if value not in 'aoyuieAOYUIE':
+#         print(index, end=' ')
+
+# ██████████ # 5x5
+# ██████████
+# ██████████
+# ██████████
+# ██████████
+
+
+# ██████████ # 5x5
+# ██      ██
+# ██      ██
+# ██      ██
+# ██████████
+
+
+BLOCK = '██'
+SPACE = '  '
+
+size = 5
+
+# for row in range(size):  # 1 Y
+#     for col in range(size):  # 5 X
+#         print(BLOCK, end='')
+#     print()
+
+# [0, 0][0, 1][0, 2][0, 3][0, 4]
+# [1, 0][1, 1][1, 2][1, 3][1, 4]
+# [2, 0][2, 1][2, 2][2, 3][2, 4]
+# [3, 0][3, 1][3, 2][3, 3][3, 4]
+# [4, 0][4, 1][4, 2][4, 3][4, 4]
+
+for row in range(size):
+    for col in range(size):
+        if col == 0 or row == 0 or col == size - 1 or row == size - 1:
+            print(BLOCK, end='')
+        else:
+            print(SPACE, end='')
+    print()
+
+# text = 'Hello'
+#
+# print(text[len(text) - 1])
