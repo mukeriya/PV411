@@ -1,0 +1,123 @@
+/* table {
+  border: 1px solid black; */
+/* border-collapse: collapse; */
+/*   border-collapse: separate;
+  border-spacing: 10px; */
+/*  background-color: blueviolet; */
+/* }
+
+th {
+  border: 1px solid red;
+}
+
+td {
+  border: 1px solid blue;
+} */
+/* 
+#center-data-cell {
+  width: 30vw;
+  height: 20vh;
+  text-align: right;
+  vertical-align: bottom;
+  background-image: url("https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp");
+  background-position: center;
+  color: white;
+}
+
+tbody {
+  background-color: aqua;
+}
+
+thead,
+tfoot {
+  color: white;
+} */
+/* 
+tr{
+    background-color: chartreuse;
+} */
+
+/* table {
+  empty-cells: hide;
+}
+ */
+
+/* table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.8em;
+  text-align: center;
+}
+ */
+
+caption {
+  text-align: right;
+  caption-side: bottom;
+}
+
+.col-1 {
+  background-color: #ffcccc;
+}
+
+.col-2 {
+  background-color: #ff9999;
+}
+
+.col-3 {
+  background-color: #cc9999;
+}
+
+thead {
+  color: #ffff00;
+}
+
+tfoot {
+  color: #fff;
+}
+
+.text::before,
+.text::after {
+  content: "";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.gates {
+  font-size: 4em;
+  position: relative;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+}
+
+.gates::before,
+.gates::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  background-color: blueviolet;
+  border: 2px solid red;
+}
+
+.gates::before {
+  left: 0;
+  transform-origin: left center;
+}
+
+.gates::after {
+  right: 0;
+}
